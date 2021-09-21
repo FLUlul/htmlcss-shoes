@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+}
 /* sezioni con 100vh */
 section{
     height: 100vh;
@@ -20,7 +23,6 @@ section{
 }
 /* conenitore immagine e testo */
 .container{
-    font-family: 'Rubik Mono One', sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -46,9 +48,29 @@ section{
 }
 
 /* pulsanti con link */
-nav{
+.pulsanti{
     position: fixed;
     right: 20px;
-    top: 20px;
+    top: 40px;
     z-index: 100;
+}
+
+.pulsanti a{
+    padding: 20px 30px;
+    border-radius: 50%;
+    border: solid 3px black;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+[href^="#red"]{
+    background-color: red;
+}
+[href^="#green"]{
+    background-color: green;
+}
+[href^="#yellow"]{
+    background-color: yellow;
 }
