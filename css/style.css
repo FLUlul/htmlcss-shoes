@@ -20,15 +20,15 @@ section{
 }
 /* conenitore immagine e testo */
 .container{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Rubik Mono One', sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: yellow;
-    font-size: 50px;
-    font-weight: 900;
-/*     border: solid white; */
+    font-size: 30px;
+    /* debug */
+    border: solid white;
 }
 #yellow .container{
     color: green;
@@ -36,9 +36,19 @@ section{
 .container img{
     display: block;
     margin: auto;
-/*     border: solid black; */
+    /* debug */
+    /*border: solid black; */
 }
 .container h1{
-/*     border: solid blue; */
     text-align: center;
+    /* debug */
+    /*border: solid blue; */
+}
+
+/* pulsanti con link */
+nav{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
 }
