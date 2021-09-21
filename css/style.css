@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-section, #red{
+/* sezioni con 100vh */
+section{
     height: 100vh;
-    background-color: red;
+    width: 100%;
     position: relative;
+}
+#red{
+    background-color: red;
 }
 #green{
     background-color: green;
@@ -14,25 +18,27 @@ section, #red{
 #yellow{
     background-color: yellow;
 }
-
+/* conenitore immagine e testo */
 .container{
+    font-family: 'Inconsolata', monospace;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     color: yellow;
     font-size: 50px;
-
+    font-weight: 900;
+/*     border: solid white; */
 }
 #yellow .container{
     color: green;
 }
 .container img{
-
-    max-width: 100%;
     display: block;
     margin: auto;
+/*     border: solid black; */
 }
 .container h1{
+/*     border: solid blue; */
     text-align: center;
 }
