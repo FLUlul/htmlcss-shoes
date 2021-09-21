@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+/* sezioni con 100vh */
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
+/* conenitore immagine e testo */
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 30px;
+    /* debug */
+/*     border: solid white; */
+}
+#yellow .container{
+    color: green;
+}
+.container img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    /* debug */
+    /*border: solid black; */
+}
+.container h1{
+    text-align: center;
+    /* debug */
+    /*border: solid blue; */
+}
+
+/* pulsanti con link */
+.pulsanti{
+    position: fixed;
+    right: 30px;
+    top: 60px;
+    z-index: 100;
+}
+.pulsanti a{
+    padding: 20px 25px;
+    border-radius: 50%;
+    border: solid 3px black;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    margin-left:30px ;
+}
+[href^="#red"]{
+    background-color: red;
+}
+[href^="#green"]{
+    background-color: green;
+}
+[href^="#yellow"]{
+    background-color: yellow;
+}
+[href^="#red"]:hover{
+    background-color: rgb(199, 1, 1);
+}
+[href^="#green"]:hover{
+    background-color: rgb(0, 99, 0);
+}
+[href^="#yellow"]:hover{
+    background-color: rgb(201, 201, 0);
+}
